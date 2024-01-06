@@ -2,7 +2,7 @@ const express = require('express');
 const Parser = require('rss-parser'); // Note: Use 'rss-parser' instead of 'parser'
 const cors = require('cors');
 const app = express();
-const PORT = 3000;
+const PORT = 5173;
 
 // Middleware to parse JSON
 app.use(express.json());
