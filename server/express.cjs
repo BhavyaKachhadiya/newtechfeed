@@ -2,7 +2,7 @@ const express = require('express');
 const Parser = require('rss-parser'); // Note: Use 'rss-parser' instead of 'parser'
 const cors = require('cors');
 const app = express();
-const PORT = 5173;
+const PORT = 3000;
 
 // Middleware to parse JSON
 app.use(express.json());
@@ -42,3 +42,6 @@ async function parseRSS(url) {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
+module.exports = app;
