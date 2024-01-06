@@ -9,7 +9,6 @@ function MainCard({ source, fetchURL }) {
   useEffect(() => {
     setLoading(true);
     // Construct the dynamic URL using the feedURL parameter
-    // const url = `https://rss-to-json-serverless-api.vercel.app/api?feedURL=${encodeURIComponent(fetchURL)}`;
     const fetchData = async () => {
       try {
         const response = await axios.get(`https://rss-to-json-bhavya.vercel.app/api?url=${encodeURIComponent(fetchURL)}`);
